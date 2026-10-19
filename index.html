@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chamod Dilmin | Software Engineering Intern</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== FLOATING BACKGROUND BLOBS ===== -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- ===== SIDE NAV (desktop) ===== -->
+  <nav class="side-nav">
+    <div class="logo">CD<span>.</span></div>
+    <ul>
+      <li><a href="#home" class="nav-dot active" data-label="Home"></a></li>
+      <li><a href="#about" class="nav-dot" data-label="About"></a></li>
+      <li><a href="#skills" class="nav-dot" data-label="Skills"></a></li>
+      <li><a href="#projects" class="nav-dot" data-label="Projects"></a></li>
+      <li><a href="#education" class="nav-dot" data-label="Education"></a></li>
+      <li><a href="#contact" class="nav-dot" data-label="Contact"></a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== TOP BAR (mobile) ===== -->
+  <header class="topbar">
+    <div class="logo">CD<span>.</span></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ===== HERO (SPLIT SCREEN) ===== -->
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <p class="greeting popup">👋 Hello, I'm</p>
+      <h1 class="popup">Chamod <span>Dilmin</span></h1>
+      <h2 class="typewriter-wrap">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-text popup">
+        HND in IT student building secure, reliable applications with
+        PHP, MySQL, C# and JavaScript. Passionate about clean code
+        and real-world solutions.
+      </p>
+      <div class="hero-buttons popup">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-right popup">
+      <div class="photo-frame">
+        <img src="profile.jpg" alt="Chamod Dilmin" />
+        <div class="frame-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I am a Higher National Diploma in Information Technology student at
+          SLIATE, Advanced Technological Institute – Tangalle. I have hands-on
+          experience building a desktop application in C# and a full web-based
+          system in PHP and MySQL — from requirements through to a working,
+          secure solution for real organizations.
+        </p>
+        <p>
+          I'm a strong self-learner with solid database design skills, clear
+          communication, and a focus on writing clean, maintainable code.
+          I'm currently seeking a Software Engineering Internship where I can
+          contribute and grow as a developer.
+        </p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat">
+          <h3 data-count="2">0</h3>
+          <p>Real Projects</p>
+        </div>
+        <div class="stat">
+          <h3 data-count="5">0</h3>
+          <p>Languages</p>
+        </div>
+        <div class="stat">
+          <h3 data-count="3">0</h3>
+          <p>Qualifications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section alt">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2>Technical Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚡</div>
+        <h3>Languages</h3>
+        <p>Java, JavaScript, PHP, SQL, C#</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <h3>Frontend & Web</h3>
+        <p>HTML, CSS</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🗄️</div>
+        <h3>Databases</h3>
+        <p>MySQL</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🛠️</div>
+        <h3>Tools</h3>
+        <p>GitHub, VS Code, Visual Studio 2022, MySQL Workbench, XAMPP, IntelliJ</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🤝</div>
+        <h3>Soft Skills</h3>
+        <p>Problem Solving, Technical Communication, Time Management, Self-Learning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <!-- 📸 ADD PROJECT SCREENSHOT HERE (optional) -->
+        <!-- <div class="project-img"><img src="opd.jpg" alt="OPD System" /></div> -->
+        <div class="project-body">
+          <p class="project-sub">Suwaya Hospital · Web</p>
+          <h3>Outpatient Department Appointment Management System</h3>
+          <p>
+            A reliable, secure web-based OPD patient management system that lets
+            patients book appointments online and access essential information.
+            Hospital staff get a secure dashboard to manage patient records efficiently.
+          </p>
+          <div class="project-tags">
+            <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+          </div>
+          <!-- 🔗 ADD LIVE DEMO / GITHUB LINK HERE -->
+          <!-- <a href="https://github.com/yourusername/opd-system" target="_blank" class="project-link">View Code →</a> -->
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal">
+        <!-- <div class="project-img"><img src="restaurant.jpg" alt="Restaurant System" /></div> -->
+        <div class="project-body">
+          <p class="project-sub">Fluffy Treats Bakers, Tangalle · Desktop</p>
+          <h3>Desktop Based Restaurant Management System</h3>
+          <p>
+            A user-friendly desktop application to manage customer orders and
+            payments efficiently. Solved key business problems: delayed or duplicated
+            invoices, misplaced orders, and inability to generate timely reports.
+          </p>
+          <div class="project-tags">
+            <span>C#</span><span>SQL</span><span>.NET</span>
+          </div>
+          <!-- 🔗 ADD LIVE DEMO / GITHUB LINK HERE -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section alt">
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2>Education</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <h3>Higher National Diploma in Information Technology</h3>
+        <p>Sri Lanka Institute of Advanced Technological Education (SLIATE)</p>
+        <p class="muted">Advanced Technological Institute – Tangalle</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <h3>Diploma in English</h3>
+        <p>British Way English Academy</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <h3>G.C.E Advanced Level – Commerce Stream</h3>
+        <p>Sri Dharmaloka College, Kelaniya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
+      <h2>Get In Touch</h2>
+    </div>
+    <p class="contact-intro reveal">
+      I'm currently looking for a Software Engineering Internship. Feel free to reach out!
+    </p>
+    <div class="contact-grid">
+      <a href="mailto:chamodhidlim@gmail.com" class="contact-card reveal">
+        <span>📧</span>
+        <p>chamodhidlim@gmail.com</p>
+      </a>
+      <a href="tel:+94701745776" class="contact-card reveal">
+        <span>📱</span>
+        <p>+94 76 174 5776</p>
+      </a>
+      <div class="contact-card reveal">
+        <span>📍</span>
+        <p>Thihagoda, Matara, Sri Lanka</p>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- 🔗 ADD YOUR LINKEDIN & GITHUB LINKS HERE -->
+    <!-- Replace the # with your actual profile URLs -->
+    <!-- ============================================= -->
+    <div class="social-links reveal">
+      <a href="#" target="_blank" class="social-btn">LinkedIn</a>
+      <a href="#" target="_blank" class="social-btn">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Chamod Dilmin. Built with HTML, CSS & JavaScript.</px>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
